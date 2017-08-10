@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.apnplace"
+    >
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <permission
+        android:name="org.apnplace.gcm.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="org.apnplace.gcm.permission.C2D_MESSAGE" />
+
+    <application
+        android:name=".constants.APNSApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/apnplacelogo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".HomeActivity"
+            android:label="HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".IntUserActivity" />
+        <activity android:name=".MyQActivity" />
+        <activity android:name=".ActivityList" />
+        <activity android:name=".UserActivity" />
+        <activity android:name=".OrientationActivity" />
+        <activity android:name=".PgmInfoActivity" />
+        <activity android:name=".TrainingActivity" />
+        <activity android:name=".ResourceActivity" />
+        <activity android:name=".NetworkingActivity" />
+        <activity android:name=".HomeListActivity" />
+        <activity android:name=".BlogHomeActivity" />
+        <activity android:name=".DataActivity" />
+        <activity android:name=".BlogCommentActivity" />
+        <activity android:name=".PrivateMsg" />
+        <activity android:name=".Faq" />
+        <activity android:name=".PostComment" />
+        <activity android:name=".QuestionsDisplay" />
+        <activity android:name=".MyProfileActivity" />
+        <activity android:name=".GetResponseQActivity" />
+        <activity android:name=".ReplyMsg" />
+        <activity android:name=".AboutUSActivity" />
+        <activity android:name=".ForgotpwdActivity" />
+        <activity android:name=".UploadProfile" />
+        <activity android:name=".WebModuleActivity4" />
+        <activity android:name=".ContactActivity" />
+        <activity android:name=".CardViewActivity" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <receiver
+            android:name=".gcm.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="org.apnplace.gcm" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".gcm.GcmMessageHandler" />
+
+        <activity android:name=".CustomCalendarActivity" />
+        <activity android:name=".TabBar" />
+        <activity android:name=".TabBarModule2" />
+        <activity android:name=".TabBarModule3" />
+        <activity android:name=".FloatingActivity" />
+        <activity android:name=".PrecepHandbook" />
+        <activity android:name=".GetNextResponseQActivity" />
+        <activity android:name=".ModuleActivity">
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity android:name=".SearchActivity" />
+        <activity android:name=".associActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android" android:layout_height="match_parent"  android:layout_width="match_parent" >
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Profile Details"
+        android:textColor="#003258"
+        android:layout_marginTop="15dp"
+        android:id="@+id/textViewpd"
+        android:layout_gravity="center_horizontal" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="5dp">
+        <TableRow
+            android:layout_width="match_parent"
+            android:paddingTop="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="First Name:"
+                android:layout_weight="1"
+                android:id="@+id/fnameprecdet" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_weight="2"
+                android:id="@+id/fname" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:paddingTop="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Last Name:"
+                android:layout_weight="1"
+                android:id="@+id/lnameprecdet" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_weight="2"
+                android:id="@+id/lname" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:paddingTop="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Role:"
+                android:layout_weight="1"
+                android:id="@+id/roletv" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_weight="2"
+                android:id="@+id/Roletv" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:paddingTop="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Email Address:"
+                android:layout_weight="1"
+                android:id="@+id/contactemailtv" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_weight="2"
+                android:id="@+id/contactemail" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:paddingTop="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Contact:"
+                android:layout_weight="1"
+                android:id="@+id/Concontacttv" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:layout_weight="2"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/Concontact" />
+
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:paddingTop="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Education level:"
+                android:layout_weight="1"
+                android:id="@+id/eduleveltv" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_weight="2"
+                android:id="@+id/eduleveledittext" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:paddingTop="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Certification:"
+                android:layout_weight="1"
+                android:id="@+id/certificationtv" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/Certitv" />
+
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:paddingTop="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Current Job:"
+                android:layout_weight="1"
+                android:id="@+id/Curntjobtv" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/curntj" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:paddingTop="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Work Zipcode:"
+                android:layout_weight="1"
+                android:id="@+id/workzip" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:inputType="number"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/workzipcode" />
+
+
+        </TableRow>
+    </TableLayout>
+<Button android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center"
+    android:id="@+id/update"
+    android:padding="10dp"
+    android:text="Update Information"/>
+
+</LinearLayout>
+    </ScrollView>

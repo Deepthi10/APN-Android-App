@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:scrollbars="vertical|horizontal">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/faqtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000000"
+            android:text="Frequently Asked Questions"
+            android:padding="20dp"/>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/faqq1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="1. What&apos;s in it for me?"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000"
+                android:padding="15dp"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/faqans1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="\u2022 Provide service \n\u2022 Give back \n\u2022 Build a stronger future for nurse practitioners \n\u2022 Enhance your practice and professional growth \n\u2022 Build your Curriculum Vitae or resume \n\u2022 Gain adjunct faculty member status at an academic institution \n\u2022 Fulfill recertification or re-licensure requirements \n\u2022 Feel re-energized by mentoring, learning new information from students, and clarifying your own thinking as you explain clinical reasoning \n\u2022 Access library resources or continuing education offerings \n\u2022 Discover your teaching and mentoring styles"
+
+                android:textColor="#000000"
+                android:padding="15dp"/>
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/faq2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000"
+                android:text="2. How do I get started?"
+                android:padding="15dp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/faqans2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="\u2022 Stay in contact with your Old Dominion University (ODU) faculty member – Dr. Christianne Fowler cfowler@odu.edu or Dr. Tina Haney thaney@odu.edu
+\n\u2022 Faculty members at ODU are responsible for clinical oversight of all students.
+\n\u2022 Each site or agency needs to have a clinical contract with ODU.
+\n\u2022 Communicate with someone at your institution or agency to assure that the student meets your agency requirements.
+\n\u2022 The APN PLACE website will have useful preceptor information, such as a handbook, and any necessary paperwork.
+\n\u2022 This information will include clear guidelines and expectations including course content, objectives, and expectations, hours required for the course, and how the schedule with the student can be arranged."
+
+                android:padding="15dp"
+                android:textColor="#000000" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/faq3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000"
+                android:text="3. What do I need to do before the student starts the clinical practicum?"
+                android:padding="15dp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/gaqans3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="\u2022 Understand what level the student is in the program.
+\n\u2022 Clarify course practicum objectives and competencies, and faculty expectations.
+\n\u2022 “Meet” the student prior to the clinical practicum through email or phone.
+\n\u2022 Consider asking the student for a current resume so you can better understand the student’s background and experience.
+\n\u2022 Orient the student to your patient population by providing them with reading materials and resources."
+
+                android:textColor="#000000"
+                android:padding="15dp"/>
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/faq4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000"
+                android:text="4. What can I expect from the students?"
+                android:padding="15dp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/faqans4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="\u2022 Students should complete paperwork and training required by your institution in a timely manner (e.g., immunization records, RN license, student ID, computer and EMR training).
+\n\u2022 Students should arrange clinical dates and times with you as soon as possible. They should work a schedule that is convenient for you.
+\n\u2022 Students should be punctual at the beginning of each clinical day and may not leave for the day until you approve it.
+\n\u2022 Professional dress and grooming are expected.
+\n\u2022 Students should only see patients under your direction. You should know about every patient they see, and they should ask and follow your directions about how you see this working best in your practice."
+
+                android:textColor="#000000"
+                android:padding="15dp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/faq5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000"
+                android:text="5. What is expected of me?"
+                android:padding="15dp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/faqans5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="\u2022 Ensure that the clinical experience is appropriate for the student in terms of both scope of practice and the ability to meet the clinical course objectives.
+\n\u2022 Provide enough support for the student to feel comfortable asking questions and offering ideas.
+\n\u2022 This is an active learning situation. You are not there to “pour” knowledge into the student. Gently challenge the student to grow, not just regurgitate back information. Help the student make “connections: and understand how bits of information integrate to “paint the picture” of the patient and guide management.
+\n\u2022 Students learn by example as they observe how you handle clinical situations, decision-making and patient/family/peer relations. However, keep “observation only” to a minimum.
+\n\u2022 Address student’s learning challenges early to help facilitate student success. If you have concerns about the student’s progress, discuss it with the student and contact the faculty member promptly."
+
+                android:textColor="#000000"
+                android:padding="15dp"/>
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/faq6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000"
+                android:text="6. What will students expect from me?"
+                android:padding="15dp"/>
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/faqans6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="\u2022 Students expect that you will:
+\n\u2022 Provide feedback on their performance and that you will promptly discuss any issues or concerns.
+\n\u2022 Create an optimal climate for learning.
+\n\u2022 Give feedback in a professional manner without demeaning or criticizing the student, especially in front of the patient or staff.
+\n\u2022 Consider using the “Ask, Tell, Ask” method:
+\n\u2022 Ask students how they think they did on a specific task. This allows reflection, they often come up with the same points you were planning to discuss.
+\n\u2022 Tell them how you see the situation and ways for improvement and provide specific, directed feedback.
+\n\u2022 Then Ask them how they will change their behavior going forward. This confirms that you agree on specific ways to improve moving forward."
+
+                android:textColor="#000000"
+                android:padding="15dp"/>
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/faq7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000"
+                android:text="7. What can I do if there are problems?"
+                android:padding="15dp"/>
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/faqans7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="\u2022 Contact the faculty member responsible – Dr. Fowler cfowler@odu.edu for FNP students and Dr. Haney thaney@odu.edu for CNS students.
+\n\u2022 The faculty will actively solicit feedback about student progress during the semester.
+\n\u2022 The faculty will collaborate with you on any questions, issues, or concerns throughout the student’s rotation.
+\n\u2022 Faculty are there to provide support and guidance to you in your role, please contact the faculty member anytime there are questions or concerns."
+
+                android:textColor="#000000"
+
+                android:padding="15dp"/>
+
+        </TableRow>
+    </TableLayout>
+</ScrollView>

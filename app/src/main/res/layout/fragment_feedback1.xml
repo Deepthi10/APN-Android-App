@@ -1,0 +1,162 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.apnplace.fragment.Feedback1">
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:weightSum="1"
+            android:layout_marginLeft="5dp"
+            android:padding="10dp"
+            android:scrollbars="vertical"
+            >
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Question 1: \nThis module meets my needs for knowing my roles and responsibilities as a preceptor:"
+                    android:layout_weight="1"
+                    android:id="@+id/genderTitle"
+                    android:padding="5dp" />
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/gender_opts"
+                    android:prompt="@string/gender_prompt"
+
+                    android:layout_weight="2"
+                    android:theme="@style/Base.Widget.AppCompat.DropDownItem.Spinner"
+                    android:id="@+id/genderSpinner"
+                    android:layout_below="@+id/genderTitle"
+                    android:dropDownWidth="200dp"
+                    />
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="\nQuestion 2: \nThis module was easy to navigate:"
+                    android:layout_weight="1"
+                    android:layout_below="@+id/genderSpinner"
+                    android:id="@+id/raceTitle"
+                    android:padding="5dp"/>
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/race_opts"
+                    android:prompt="@string/race_prompt"
+                    android:layout_weight="2"
+                    android:theme="@style/Base.Widget.AppCompat.DropDownItem.Spinner"
+                    android:id="@+id/raceDropdown"
+                    android:layout_below="@+id/raceTitle"
+                    android:dropDownWidth="200dp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="\nQuestion 3: \nI will be able to apply what i learned to my current preceptor role:"
+                    android:layout_weight="1"
+                    android:paddingTop="10dp"
+                    android:layout_below="@+id/raceDropdown"
+                    android:id="@+id/EducationalLevelTitle"
+                    android:padding="5dp"/>
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/edu_opts"
+                    android:prompt="@string/edu_prompt"
+                    android:layout_weight="2"
+                    android:theme="@style/Base.Widget.AppCompat.DropDownItem.Spinner"
+                    android:id="@+id/educationDropdown"
+                    android:layout_below="@+id/EducationalLevelTitle"
+                    android:dropDownWidth="200dp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="\nQuestion 4: \nWould you recommend that your peers participate in this module?"
+                    android:layout_below="@+id/educationDropdown"
+                    android:layout_weight="1"
+                    android:id="@+id/maritalTitle"
+                    android:padding="5dp"/>
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/marital_opts"
+                    android:prompt="@string/marital_prompt"
+                    android:layout_weight="2"
+                    android:theme="@style/Base.Widget.AppCompat.DropDownItem.Spinner"
+                    android:id="@+id/maritalDropdown"
+                    android:layout_below="@+id/maritalTitle"
+                    android:dropDownWidth="200dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvfeed1"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_below="@+id/maritalDropdown"
+                    android:text="\nQuestion 5: \nWhat could we do to improve this module?"
+                    android:padding="5dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvfeed1"
+                    android:id="@+id/editfeed1"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/tvfeed2"
+                    android:layout_below="@+id/editfeed1"
+                    android:text="\nQuestion 6: \nWhat other material would you like to have included?"
+                    android:padding="5dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/tvfeed2"
+                    android:id="@+id/editfeed2"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:padding="5dp"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"
+                    android:id="@+id/submitfeedback"
+                    android:layout_below="@+id/editfeed2"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:padding="5dp"
+                    />
+
+
+        </LinearLayout>
+
+        </ScrollView>
+</FrameLayout>
